@@ -2,70 +2,75 @@
 
 Build web applications using React.js for the front end and python/flask for your backend API.
 
-- Documentation can be found here: https://start.4geeksacademy.com/starters/react-flask
-- Here is a video on [how to use this template](https://www.loom.com/share/f37c6838b3f1496c95111e515e83dd9b)
-- Integrated with Pipenv for package managing.
-- Fast deployment to heroku [in just a few steps here](https://start.4geeksacademy.com/backend/deploy-heroku-posgres).
-- Use of .env file.
-- SQLAlchemy integration for database abstraction.
 
-### 1) Installation:
+# <AppleGeeks>
 
-> If you use Github Codespaces (recommended) or Gitpod this template will already come with Python, Node and the Posgres Database installed. If you are working locally make sure to install Python 3.10, Node 
+## Descripción
 
-It is recomended to install the backend first, make sure you have Python 3.8, Pipenv and a database engine (Posgress recomended)
 
-1. Install the python packages: `$ pipenv install`
-2. Create a .env file based on the .env.example: `$ cp .env.example .env`
-3. Install your database engine and create your database, depending on your database you have to create a DATABASE_URL variable with one of the possible values, make sure you replace the valudes with your database information:
+En el mercado actual, la falta de un espacio dedicado a los servicios para productos Apple genera dificultades tanto para los proveedores como para los usuarios.
 
-| Engine    | DATABASE_URL                                        |
-| --------- | --------------------------------------------------- |
-| SQLite    | sqlite:////test.db                                  |
-| MySQL     | mysql://username:password@localhost:port/example    |
-| Postgress | postgres://username:password@localhost:5432/example |
+Los proveedores de servicios luchan por diferenciarse en un mercado saturado, mientras que los usuarios se sienten abrumados por la abundancia de opciones y la falta de información confiable y comparativa.
 
-4. Migrate the migrations: `$ pipenv run migrate` (skip if you have not made changes to the models on the `./src/api/models.py`)
-5. Run the migrations: `$ pipenv run upgrade`
-6. Run the application: `$ pipenv run start`
+Presentación de la plataforma: 
+"Nuestra solución es una plataforma en línea dedicada exclusivamente a la publicación y promoción de servicios relacionados con la gama de productos de Apple."
 
-> Note: Codespaces users can connect to psql by typing: `psql -h localhost -U gitpod example`
+BENEFICIO
+"Esta plataforma proporciona a los proveedores un canal eficiente para alcanzar su público objetivo y promocionar su oferta de manera efectiva. Los usuarios de productos de Apple pueden encontrar y elegir entre una amplia variedad de servicios de calidad con solo un par de clics."
 
-### Backend Populate Table Users
 
-To insert test users in the database execute the following command:
 
-```sh
-$ flask insert-test-users 5
-```
+## Índice (opcional)
 
-And you will see the following message:
 
-```
-  Creating test users
-  test_user1@test.com created.
-  test_user2@test.com created.
-  test_user3@test.com created.
-  test_user4@test.com created.
-  test_user5@test.com created.
-  Users created successfully!
-```
+## Instalación
 
-To update with all yours tables you can edit the file app.py and go to the line 80 to insert the code to populate others tables
+¿Cuáles son los pasos necesarios para instalar su proyecto? Proporcione una descripción paso a paso de cómo poner en funcionamiento el entorno de desarrollo.
 
-### Front-End Manual Installation:
+puede realizar un fork,  clonar o descargar el repositorio 
 
--   Make sure you are using node version 14+ and that you have already successfully installed and runned the backend.
+para ejecutar el proyecto instale npm
+npm i
+pip install
+pipenv install
 
-1. Install the packages: `$ npm install`
-2. Start coding! start the webpack dev server `$ npm run start`
 
-## Publish your website!
+posteriormente ejecute en una terminal del proyecto
+pipenv run start
+y en otra terminal del proyecto
+npm run start
 
-This boilerplate it's 100% read to deploy with Render.com and Heroku in a matter of minutes. Please read the [official documentation about it](https://start.4geeksacademy.com/deploy).
+## Crédito
 
-### Contributors
+Los colaboradores de este proyecto son:
 
-This template was built as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), and [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning).
 
+
+## Licencia
+
+La última sección de un archivo README de alta calidad es la licencia. Esto permite que otros desarrolladores sepan lo que pueden y no pueden hacer con su proyecto. Si necesita ayuda para elegir una licencia, consulte [https://choosealicense.com/](https://choosealicense.com/).
+
+---
+
+🏆 Las secciones anteriores son lo mínimo indispensable y su proyecto determinará finalmente el contenido de este documento. También puede considerar agregar las siguientes secciones.
+
+## Insignias
+
+![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
+
+Las insignias en sí mismas no son necesarias, pero demuestran un crédito callejero. Las insignias permiten a otros desarrolladores saber que usted sabe lo que está haciendo. Eche un vistazo a las insignias presentadas por [shields.io](https://shields.io/). Es posible que no comprenda lo que todas ellas representan ahora, pero lo comprenderá con el tiempo.
+
+## Funciones
+
+Si su proyecto tiene muchas funciones, enumérelas aquí.
+
+## Cómo contribuir
+
+Si creó una aplicación o paquete, y desea que otros desarrolladores contribuyan con ella, puede incluir directrices sobre cómo hacerlo. El [Pacto de colaboradores](https://www.contributor-covenant.org/) es un estándar de la industria, pero siempre puede redactar el suyo si lo prefiere.
+
+## Pruebas
+
+
+
+git push -u origin main
 You can find other templates and resources like this at the [school github page](https://github.com/4geeksacademy/).
